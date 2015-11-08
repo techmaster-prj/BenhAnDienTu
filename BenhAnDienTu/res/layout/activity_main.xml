@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textwelcome"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lname"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textwelcome"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btchangepass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textwelcome"
+        android:background="@drawable/rectangle"
+        android:text="@string/btchangepass"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btchangepass"
+        android:layout_below="@+id/btchangepass"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/rectangle"
+        android:text="@string/btlogout"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btAllRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/logout"
+        android:layout_below="@+id/logout"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/rectangle"
+        android:text="@string/btallrecord"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btSetExam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btAllRecords"
+        android:layout_below="@+id/btAllRecords"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        android:text="@string/btsetexam"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btSetExam"
+        android:layout_marginTop="23dp"
+        android:text="@string/tvuserpanel"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</RelativeLayout>

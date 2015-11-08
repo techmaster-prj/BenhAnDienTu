@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" 
+    android:background="@drawable/background_color">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/tvwelcome"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView"
+        android:hint="@string/hintemail"
+        android:textColor="#000000"
+        android:textSize="15sp" 
+        android:background="@drawable/round_corner"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/pword"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle"
+        android:text="@string/btregister"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/loginErrorMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/passres"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/email"
+        android:layout_toLeftOf="@+id/textView"
+        android:text="@string/tvemail"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/pword"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/email"
+        android:layout_below="@+id/email"
+        android:ems="10"
+        android:hint="@string/hintpass"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textSize="15sp" 
+        android:background="@drawable/round_corner"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/pword"
+        android:layout_alignRight="@+id/textView2"
+        android:text="@string/tvpass"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/registerbtn"
+        android:layout_alignBottom="@+id/registerbtn"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rectangle"
+        android:text="@string/btlogin"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/passres"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/loginErrorMsg"
+        android:layout_below="@+id/registerbtn"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/rectangle"
+        android:text="@string/btforgot"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

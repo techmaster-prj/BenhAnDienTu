@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nguyenmanhtuan.benhandientu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light" >
+        <activity
+            android:name="com.nguyenmanhtuan.benhandientu.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nguyenmanhtuan.benhandientu.AllRecordsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.nguyenmanhtuan.benhandientu.ChangePasswordActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.nguyenmanhtuan.benhandientu.MainActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.nguyenmanhtuan.benhandientu.PasswordResetActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.nguyenmanhtuan.benhandientu.RegisterActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.nguyenmanhtuan.benhandientu.RegisteredActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.nguyenmanhtuan.benhandientu.RecordDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.nguyenmanhtuan.benhandientu.RecordDetailActivity1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.nguyenmanhtuan.benhandientu.SetExamActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.nguyenmanhtuan.benhandientu.HelpActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.nguyenmanhtuan.benhandientu.SettingActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.nguyenmanhtuan.benhandientu.LoginActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.nguyenmanhtuan.benhandientu.MenuActivity"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>
